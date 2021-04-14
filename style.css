@@ -283,8 +283,8 @@ a:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
+#bloc-1-hero {
+    text-align: center;
 }
 
 .navbar {
@@ -659,11 +659,11 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
-}
-
-.hero-bloc-text-sub {
-    font-size: 36px;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    color: #F3976C !important;
 }
 
 .statement-bloc-text {
