@@ -44,13 +44,13 @@
     
 <!-- bloc-0 -->
 
-<header class="bloc bgc-white l-bloc" id="bloc-0">
-	<section class="container bloc-sm ">
+<header class="bloc bgc-white l-bloc" id="bloc-0"> <!-- balise semantique -->
+	<section class="container bloc-sm "> <!-- balise semantique -->
 		<nav class="navbar row">
 			<div class="navbar-header">
 
 				<a class="navbar-brand" href="index.html">
-					<img src="img/la-chouette-agence.png" alt="Logo et nom de l'entreprise La Chouette Agence" height="40" />
+					<img src="img/la-chouette-agence.png" alt="Logo et nom de l'entreprise La Chouette Agence" height="40" /> <!-- alt text-->
 				</a>
 
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
@@ -59,7 +59,7 @@
 			</div>
 				
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
+				<ul class="site-navigation nav navbar-nav"> <!-- empty li -->
 					<li>
 						<a href="index.html">Accueil</a>
 					</li>
@@ -72,18 +72,16 @@
 	</section>
 </header>
 
-
-	
-
 <!-- bloc-0 END -->
 
 <!-- bloc-1-presentation -->
-<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero">
+
+<section class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax" id="bloc-1-hero"> <!-- balise semantique -->
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
 
-				<img src="img/logo.png" class="center-block" width="100px" alt="Logo de l'entreprise La chouette Agence" />
+				<img src="img/logo.png" class="center-block" width="100px" alt="Logo de l'entreprise La chouette Agence" /> <!-- alt text -->
 				<p class="hero-bloc-text">La chouette agence.</p>
 				<a href="page2.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" id="cta-hero">Contact</a>
 
@@ -91,62 +89,69 @@
 		</div>
 	</div>
 </section>
+
 <!-- bloc-1-presentation END -->
 
 <!-- bloc-2-services -->
-<div class="bloc bgc-white l-bloc" id="bloc-2-services">
+
+<section class="bloc bgc-white l-bloc" id="bloc-2-services"> <!-- balise semantique -->
+
 	<div class="container bloc-md">
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/title.png" />
-			</div>
-		</div>
-		<div class="row voffset-lg med-width-whitespace">
-			<div class="col-sm-4">
-				<div class="text-center">
-					<span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
-				</div>
-				<h3 class="mg-md text-center">
+		<h1 id="services__heading">La Chouette Agence, spécialisée en web design, aide les entreprises à devenir attractives et visibles sur Internet.</h1> <!-- heading instead of img  -->
+		
+
+		<section class="row voffset-lg med-width-whitespace"> <!-- balise semantique -->
+			<h2 id="services__subheading">Nos services</h2> <!-- balise semantique -->
+
+			<article class="col-sm-4 services__item"> <!-- balise semantique -->
+				<span class="et-icon-browser services__icon"></span>
+				<h3 class="services__title">
 					Web design
 				</h3>
-				<p class="text-center ">
+				<p>
 					Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.
 				</p>
-			</div>
-			<div class="col-sm-4">
-				<div class="text-center">
-					<span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
-				</div>
-				<h3 class="mg-md text-center">
+			</article>
+
+			<article class="col-sm-4 services__item"> <!-- balise semantique -->
+
+				<span class="et-icon-presentation services__icon"></span>
+				<h3 class="services__title">
 					&nbsp;Stratégie
 				</h3>
-				<p class="text-center ">
+				<p>
 					Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.<br>
 				</p>
-			</div>
-			<div class="col-sm-4">
-				<div class="text-center">
-					<span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
-				</div>
-				<h3 class="mg-md text-center">
+			</article>
+
+			<article class="col-sm-4 services__item"> <!-- balise semantique -->
+
+				<span class="et-icon-edit services__icon"></span>
+				<h3 class="services__title">
 					Illustrations
 				</h3>
-				<p class="text-center ">
+				<p>
 					Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
 				</p>
-			</div>
-		</div>
-		<div class="row voffset-lg voffset">
-			<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-				<img alt="agence web, agence web paris, web design paris, stratégie web" src="img/citation.png" />
+			</article>
+		</section>
 
-			</div>
-		</div>
+		<figure class="voffset-lg voffset services__quote"> <!-- balise semantique -->
+			<blockquote>
+				<p>
+					" La Chouette Agence est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon. "
+				</p>
+			</blockquote>
+			<figcaption>Maxime Guibard, PDG de À vos fourchettes</figcaption>
+		</figure>
+
 	</div>
-</div>
+</section>
+
 <!-- bloc-2-services END -->
 
 <!-- bloc-3-what-i-do -->
+
 <div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax" id="bloc-3-what-i-do">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace black-background">
@@ -161,9 +166,11 @@
 		</div>
 	</div>
 </div>
+
 <!-- bloc-3-what-i-do END -->
 
 <!-- bloc-4-portfolio -->
+
 <div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
 	<div class="container bloc-lg">
 		<div class="row">
@@ -213,9 +220,11 @@
 		</div>
 	</div>
 </div>
+
 <!-- bloc-4-portfolio END -->
 
 <!-- bloc-5-cta -->
+
 <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
 	<div class="container bloc-lg">
 		<div class="row">
@@ -228,9 +237,11 @@
 		</div>
 	</div>
 </div>
+
 <!-- bloc-5-cta END -->
 
 <!-- Footer - bloc-8 -->
+
 <div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
@@ -304,6 +315,7 @@
 		</div>
 	</div>
 </div>
+
 <!-- Footer - bloc-8 END -->
 
 </div>
