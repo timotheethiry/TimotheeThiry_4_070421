@@ -991,7 +991,8 @@ h4 {
 .btn-contact {
     margin-top: 22px;
     border-radius: 40px;
-    color: #FFFFFF!important;
+    color: #fff !important;
+    text-shadow: 0px 1px 5px #000;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -999,12 +1000,11 @@ h4 {
     background: #F3976C;
     border: 1px solid rgba(0, 0, 0, .08);
     border-bottom-color: rgba(0, 0, 0, .1);
-    text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
 .btn-contact:hover {
-    background: #c27956!important;
+    background: #c27956 !important;
 }
 
 #services__heading {
@@ -1169,6 +1169,36 @@ h4 {
     font-size: 20px;
     color: #FFF !important;
     margin: 10px 0 20px 0;
+}
+
+footer
+{
+    text-align: center;
+    padding: 2rem;
+    background-color: #F3976C;
+}
+
+footer p
+{
+    color: #424242 !important;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+footer h3
+{
+    color: #424242 !important;
+    font-size: 16px !important;
+    text-transform: none;
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
+.footer__icon
+{
+    margin-top: 2rem;
+    color: #424242 !important;
 }
 
 
