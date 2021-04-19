@@ -27,8 +27,7 @@
 		<!-- Principal conteneur -->
 		<div class="page-container">	
 			<!-- bloc-0 header -->
-			<header class="bloc bgc-white l-bloc" id="bloc-0"> <!-- balise semantique -->
-				<section class="container bloc-sm "> <!-- balise semantique -->
+			<header class="bloc bgc-white l-bloc container bloc-sm" id="bloc-0"> <!-- balise semantique -->
 					<nav class="navbar row">
 						<div class="navbar-header">
 
@@ -52,7 +51,6 @@
 							</ul>
 						</div>
 					</nav>
-				</section>
 			</header>
 			<!-- bloc-0 END -->
 
@@ -74,44 +72,57 @@
 			<!-- bloc-6 END -->
 
 			<!-- bloc-7 -->
-			<div class="bloc bgc-white l-bloc" id="bloc-7">
+			<div class="bloc" id="bloc-7-form">
 				<div class="container bloc-lg">
 					<div class="row">
-						<div class="col-sm-6">
-							<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<section class="col-sm-6"> <!-- balise semantique -->
+							<form id="form_1" method="POST" action="./includes/form_1.php" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"> <!-- fonctionnalités balises -->
+								
 								<div class="form-group">
-									<label>
+									<label for="name"> <!-- fonctionnalités balises -->
 										Nom
 									</label>
-									<input id="name" class="form-control" required />
+									<input id="name" name="name" class="form-control" type="text" required /> <!-- fonctionnalités balises -->
 								</div>
+
 								<div class="form-group">
-									<label>
+									<label for="email"> <!-- fonctionnalités balises -->
 										Adresse email
 									</label>
-									<input id="email" class="form-control" type="email" required />
+									<input id="email" name="email" class="form-control" type="email" required /> <!-- fonctionnalités balises -->
 								</div>
+
 								<div class="form-group">
-									<label>
+									<label for="find"> <!-- fonctionnalités balises -->
 										Comment nous avez-vous connu ?
 									</label>
-									<input class="form-control" type="email" required id="input_504" />
+									<input id="find" name="find" class="form-control" type="text" required /> <!-- fonctionnalités balises -->
 								</div>
+
 								<div class="form-group">
-									<label>
-										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-									</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+									<label for="message"> <!-- fonctionnalités balises -->
+										Brief de votre projet (Ajoutez autant de détails que nécessaire)
+									</label>
+									<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea> <!-- fonctionnalités balises -->
 								</div> 
-								<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+
+								<button class="bloc-button btn btn-lg btn-block btn-contact btn-contact--form" type="submit">
 									Envoyer
 								</button>
 							</form>
-						</div>
-						<div class="col-sm-6">
-							<p>
-								contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+						</section>
+
+						<aside class="col-sm-6 form__details"> <!-- balise semantique -->
+							<p class="form__text"> <!-- syntaxe -->
+								contact@lachouetteagence.com
 							</p>
-						</div>
+							<p class="form__text"> <!-- syntaxe -->
+								2 place Sathonay 69001 Lyon
+							</p>
+							<p class="form__text"> <!-- syntaxe -->
+								Ouvert de 9h à 18h, du lundi au vendredi
+							</p>
+						</aside>
 					</div>
 				</div>
 			</div>
