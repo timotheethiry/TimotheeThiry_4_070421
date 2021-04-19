@@ -80,25 +80,6 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
-
-.b-parallax {
-    background-attachment: fixed;
-}
-
 .d-bloc {
     color: rgba(255, 255, 255, .7);
 }
@@ -639,14 +620,6 @@ a {
     max-width: 1000px;
 }
 
-.hero-bloc-text {
-    font-size: 32px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 1.1;
-    color: #FFF !important;
-}
-
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
@@ -659,11 +632,6 @@ a {
 
 p {
     font-size: 11px;
-}
-
-.tight-width-whitespace {
-    max-width: 600px;
-    margin: auto;
 }
 
 .h1 {
@@ -750,10 +718,6 @@ h4 {
 
 .ltc-atomic-tangerine:hover {
     color: #c27956!important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
@@ -986,7 +950,58 @@ h4 {
 
 
 
-/* new rules to optimize stylesheet */
+/* optimized rules */
+
+/* home page*/
+
+.bloc-bg-texture::before {
+    content: "";
+    background-size: 2px 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.texture-paper::before {
+    background: url("img/texture-paper.png");
+    background-size: 280px 280px;
+}
+
+.b-parallax {
+    background-attachment: fixed;
+}
+
+.tight-width-whitespace {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero__heading {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    color: #FFF !important;
+}
+
+.hero__heading--contrast-mg {
+    text-shadow: 0px 1px 5px #333;
+    margin-bottom: 20px; 
+}
+
+.hero__text {
+    font-size: 22px;
+    color: #FFF !important;
+    text-shadow: 0px 1px 5px #333;
+}
+
+@media (max-width: 767px) {
+    .hero__text {
+        padding: 0 20px !important;
+    } 
+}
 
 .btn-contact {
     margin-top: 22px;
@@ -1201,4 +1216,11 @@ footer h3
     color: #424242 !important;
 }
 
+
+/* Contact page rules */
+
+#bloc-6-hero {
+    text-align: center;
+    background: url("img/dots-bg.png") repeat, #F3976C;
+}
 
