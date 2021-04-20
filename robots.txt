@@ -1,0 +1,6 @@
+# Group 1
+
+User-agent: *
+Allow: /
+
+Sitemap: https://timotheethiry.github.io/TimotheeThiry_4_070421/sitemap.xml

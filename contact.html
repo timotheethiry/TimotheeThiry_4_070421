@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="keywords" content="web design, lyon, agence, projet"> <!-- balise fonctionnelle -->
 		<meta name="description" content="Profitez d'une expertise en web design reconnue avec La Chouette Agence. Contactez-nous pour échanger sur vos besoins et vous proposez un service adapté à votre projet."> <!-- balise fonctionnelle -->
+		<meta name="robots" content="index, follow">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 		<link rel="shortcut icon" type="image/png" href="favicon.jpg"> 
@@ -76,34 +77,35 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<section class="col-sm-6"> <!-- balise semantique -->
-							<form id="form_1" method="POST" action="./includes/form_1.php" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"> <!-- fonctionnalités balises -->
-								
+							<h2 class="form__subheading"> Faisons connaissance !</h2>
+							<form id="form_1" method="POST" action="./includes/form_1.php" novalidate > <!-- attributs balises -->
+								<!-- use JS to change the browser messages success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" -->
 								<div class="form-group">
-									<label for="name"> <!-- fonctionnalités balises -->
+									<label for="name"> <!-- attributs balises -->
 										Nom
 									</label>
-									<input id="name" name="name" class="form-control" type="text" required /> <!-- fonctionnalités balises -->
+									<input id="name" name="name" class="form-control" type="text" required /> <!-- attributs balises -->
 								</div>
 
 								<div class="form-group">
-									<label for="email"> <!-- fonctionnalités balises -->
+									<label for="email"> <!-- attributs balises -->
 										Adresse email
 									</label>
-									<input id="email" name="email" class="form-control" type="email" required /> <!-- fonctionnalités balises -->
+									<input id="email" name="email" class="form-control" type="email" required /> <!-- attributs balises -->
 								</div>
 
 								<div class="form-group">
-									<label for="find"> <!-- fonctionnalités balises -->
+									<label for="input_504"> <!-- attributs balises -->
 										Comment nous avez-vous connu ?
 									</label>
-									<input id="find" name="find" class="form-control" type="text" required /> <!-- fonctionnalités balises -->
+									<input id="input_504" name="input_504" class="form-control" type="text" required /> <!-- attributs balises -->
 								</div>
 
 								<div class="form-group">
-									<label for="message"> <!-- fonctionnalités balises -->
+									<label for="message"> <!-- attributs balises -->
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)
 									</label>
-									<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea> <!-- fonctionnalités balises -->
+									<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea> <!-- attributs balises -->
 								</div> 
 
 								<button class="bloc-button btn btn-lg btn-block btn-contact btn-contact--form" type="submit">
