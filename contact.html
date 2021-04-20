@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr"> <!-- correction langue  -->
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="web design, lyon, agence, projet"> <!-- balise fonctionnelle -->
+		<meta name="description" content="Profitez d'une expertise en web design reconnue avec La Chouette Agence. Contactez-nous pour échanger sur vos besoins et vous proposez un service adapté à votre projet."> <!-- balise fonctionnelle -->
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+		<link rel="shortcut icon" type="image/png" href="favicon.jpg"> 
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css"> <!-- correction url -->
+		<link rel="stylesheet" type="text/css" href="style.css"> <!-- correction url -->
+		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css"> <!-- correction url -->
+		<link rel="stylesheet" type="text/css" href="./css/et-line.css"> <!-- correction url -->
+		
+		
+		<script src="./js/jquery-2.1.0.js"></script> <!-- correction uri -->
+		<script src="./js/bootstrap.js"></script> <!-- correction uri -->
+		<script src="./js/blocs.js"></script> <!-- correction uri -->
+		<script src="./js/jqBootstrapValidation.js"></script>
+		<script src="./js/formHandler.js"></script>
+
+		<title>Contact</title> <!-- titre spécifique fonction page -->
+		
+	</head>
+
+	<body>
+		<!-- Principal conteneur -->
+		<div class="page-container">	
+			<!-- bloc-0 header -->
+			<header class="bloc bgc-white l-bloc container bloc-sm" id="bloc-0"> <!-- balise semantique -->
+					<nav class="navbar row">
+						<div class="navbar-header">
+
+							<a class="navbar-brand" href="index.html"> 
+								<img src="img/la-chouette-agence.png" alt="Logo et nom de l'entreprise La Chouette Agence" height="40" /> <!-- accessibilité alt text -->
+							</a>
+
+							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+								<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+							</button>
+						</div>
+							
+						<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+							<ul class="site-navigation nav navbar-nav"> <!-- syntaxe balise vide -->
+								<li>
+									<a href="index.html">Accueil</a>
+								</li>
+								<li>
+									<a href="contact.html">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+			</header>
+			<!-- bloc-0 END -->
+
+			<!-- bloc-6 -->
+			<section class="bloc bloc-bg-texture texture-paper" id="bloc-6-hero">  <!-- balise semantique -->
+				<div class="container bloc-lg">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1 class="hero__heading hero__heading--contrast-mg"> <!-- contraste -->
+								Parlons web design !
+							</h1>
+							<p class="hero__text tight-width-whitespace">  <!-- syntaxe contraste -->
+								Nous sommes ravis que vous souhaitiez collaborer avec notre agence. Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- bloc-6 END -->
+
+			<!-- bloc-7 -->
+			<div class="bloc" id="bloc-7-form">
+				<div class="container bloc-lg">
+					<div class="row">
+						<section class="col-sm-6"> <!-- balise semantique -->
+							<h2 class="form__subheading"> Faisons connaissance !</h2>
+							<form id="form_1" method="POST" action="./includes/form_1.php" novalidate > <!-- attributs balises -->
+								<!-- use JS to change the browser messages success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" -->
+								<div class="form-group">
+									<label for="name"> <!-- attributs balises -->
+										Nom
+									</label>
+									<input id="name" name="name" class="form-control" type="text" required /> <!-- attributs balises -->
+								</div>
+
+								<div class="form-group">
+									<label for="email"> <!-- attributs balises -->
+										Adresse email
+									</label>
+									<input id="email" name="email" class="form-control" type="email" required /> <!-- attributs balises -->
+								</div>
+
+								<div class="form-group">
+									<label for="input_504"> <!-- attributs balises -->
+										Comment nous avez-vous connu ?
+									</label>
+									<input id="input_504" name="input_504" class="form-control" type="text" required /> <!-- attributs balises -->
+								</div>
+
+								<div class="form-group">
+									<label for="message"> <!-- attributs balises -->
+										Brief de votre projet (Ajoutez autant de détails que nécessaire)
+									</label>
+									<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea> <!-- attributs balises -->
+								</div> 
+
+								<button class="bloc-button btn btn-lg btn-block btn-contact btn-contact--form" type="submit">
+									Envoyer
+								</button>
+							</form>
+						</section>
+
+						<aside class="col-sm-6 form__details"> <!-- balise semantique -->
+							<p class="form__text"> <!-- syntaxe -->
+								contact@lachouetteagence.com
+							</p>
+							<p class="form__text"> <!-- syntaxe -->
+								2 place Sathonay 69001 Lyon
+							</p>
+							<p class="form__text"> <!-- syntaxe -->
+								Ouvert de 9h à 18h, du lundi au vendredi
+							</p>
+						</aside>
+					</div>
+				</div>
+			</div>
+			<!-- bloc-7 END -->
+
+			<!-- ScrollToTop Button -->
+			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<!-- ScrollToTop Button END-->
+
+
+			<!-- Footer - bloc-8 -->
+			<footer> <!-- balise semantique -->
+				<div class="container bloc-sm">
+					<div class="row">
+						<div class="col-sm-12">
+							<p>La chouette agence</p> <!-- syntaxe -->
+							<h3>Agence web basée à Lyon.</h3> <!-- syntaxe -->
+
+							<aside class="row row-no-gutters social"> <!-- balise semantique -->
+								<div class="col-sm-3">
+									<a href="https://twitter.com/home"><span class="fa fa-twitter icon-md footer__icon"></span></a> <!-- quality links -->
+								</div>
+
+								<div class="col-sm-3">
+									<a href="https://fr-fr.facebook.com/"><span class="fa fa-facebook icon-md footer__icon"></span></a> <!-- quality links -->
+								</div>
+
+								<div class="col-sm-3">
+									<a href="https://dribbble.com/"><span class="fa fa-dribbble icon-md footer__icon"></span></a> <!-- quality links -->
+								</div>
+
+								<div class="col-sm-3">
+									<a href="https://www.instagram.com/?hl=fr"><span class="fa fa-instagram icon-md footer__icon"></span></a> <!-- quality links -->
+								</div>
+							</aside>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer - bloc-8 END -->
+		</div>
+		<!-- Principal conteneur END -->
+	</body>
+</html>
