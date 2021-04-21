@@ -7,13 +7,22 @@
 		<meta name="robots" content="index, follow">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-		<link rel="shortcut icon" type="image/png" href="favicon.jpg"> 
-		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css"> <!-- correction url -->
+		<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+
+		<!-- Bootstrap CDN -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 		<link rel="stylesheet" type="text/css" href="style.css"> <!-- correction url -->
-		<link rel="stylesheet" type="text/css" href="./css/font-awesome.css"> <!-- correction url -->
-		<link rel="stylesheet" type="text/css" href="./css/et-line.css"> <!-- correction url -->
-		
-		
+
+		<!-- Font Awesome CDN -->
+		<script src="https://kit.fontawesome.com/f492b45c83.js" crossorigin="anonymous"></script>
+
+		<!-- et-line removed because unused on this page-->
+
+		<!-- CDN for jQuery and Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 		<script src="./js/jquery-2.1.0.js"></script> <!-- correction uri -->
 		<script src="./js/bootstrap.js"></script> <!-- correction uri -->
 		<script src="./js/blocs.js"></script> <!-- correction uri -->
@@ -56,30 +65,31 @@
 		<!-- Principal conteneur -->
 		<div class="page-container">	
 			<!-- bloc-0 header -->
-			<header class="bloc bgc-white l-bloc container bloc-sm" id="bloc-0"> <!-- balise semantique -->
-					<nav class="navbar row">
-						<div class="navbar-header">
+			<header class="bloc bgc-white container bloc-sm" id="bloc-0"> <!-- balise semantique -->
+				<nav class="navbar navbar-expand-md navbar-light row">
+					<div class="navbar-header">
 
-							<a class="navbar-brand" href="index.html"> 
-								<img src="img/la-chouette-agence.png" alt="Logo et nom de l'entreprise La Chouette Agence" height="40" /> <!-- accessibilité alt text -->
-							</a>
+						<!-- hidden content -->
+						<a class="navbar-brand" href="index.html"> <!-- hidden content -->
+							<img src="img/la-chouette-agence.png" alt="Logo et nom de l'entreprise La Chouette Agence" height="40" /> <!-- accessibilité alt text -->
+						</a>
+						<!-- hidden content -->
+						<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>	
+					</div>
 
-							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-								<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-							</button>
-						</div>
-							
-						<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-							<ul class="site-navigation nav navbar-nav"> <!-- syntaxe balise vide -->
-								<li>
-									<a href="index.html">Accueil</a>
-								</li>
-								<li>
-									<a href="contact.html">Contact</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
+					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav" id="navbar-1">
+						<ul class="nav navbar-nav"> <!-- syntaxe balise vide -->
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</header>
 			<!-- bloc-0 END -->
 
